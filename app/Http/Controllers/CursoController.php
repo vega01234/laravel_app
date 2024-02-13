@@ -32,4 +32,13 @@ class CursoController extends Controller
 
     }
 
+    public function update(Request $request, Curso $curso){
+        $curso->update($request->all());
+        return redirect()->route('cursos.show', $curso);
+    }
+
+    public function edit(Curso $curso){
+        return view('cursos.edit', compact('curso'));
+    }
+
 }
