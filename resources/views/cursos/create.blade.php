@@ -7,7 +7,7 @@
     <h1 style="text-align: center">Crear Cursos</h1>
 
     <div>
-        <form action="" method="post">
+        <form action="{{route('cursos.store')}}" method="post">
 
             @csrf
 
@@ -16,8 +16,8 @@
                 <input type="text" name="name" id="name">
             </div>
             <div>
-                <label for="description">Descripcion</label>
-                <input type="text" name="description" id="description">
+                <label for="description">Descripcion</label> <br>
+                <textarea name="description" id="description" cols="50" rows="10"></textarea>
             </div>
             <div>
                 <label for="category">Categoria</label>

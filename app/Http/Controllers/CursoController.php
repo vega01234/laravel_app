@@ -24,4 +24,12 @@ class CursoController extends Controller
         return view('cursos.show', compact('curso'));
     }
 
+    public function store(Request $request){
+        
+        $curso = Curso::create($request->all());
+
+        return redirect()->route('cursos.show', $curso);
+
+    }
+
 }
