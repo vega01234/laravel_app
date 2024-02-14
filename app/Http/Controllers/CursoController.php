@@ -44,4 +44,9 @@ class CursoController extends Controller
         return view('cursos.edit', compact('curso'));
     }
 
+    public function destroy(Curso $curso){
+        $curso->delete();
+        return redirect()->route('cursos.index');
+    }
+
 }
