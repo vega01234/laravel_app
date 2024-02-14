@@ -3,9 +3,10 @@
 @section('title-page', 'Inicio')
 
 @section('content')
+
+    @include('layout.partials.navbar')
     
     <h1 style="text-align: center">Pagina Principal - Cursos</h1>
-    <a href="{{route('cursos.create')}}">Crear Curso</a>
     
     <p>Cursos Disponibles</p>
     @foreach ($cursos as $curso)

@@ -3,6 +3,8 @@
 @section('title-page', 'Editar Curso')
 
 @section('content')
+
+    @include('layout.partials.navbar')
     
     <h1 style="text-align: center">Editar Curso: {{$curso->name}}</h1>  
     

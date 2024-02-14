@@ -4,6 +4,8 @@
 
 @section('content')
     
+    @include('layout.partials.navbar')
+
     <h1 style="text-align: center">Crear Cursos</h1>
 
     <div>

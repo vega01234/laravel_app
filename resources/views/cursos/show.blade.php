@@ -3,6 +3,8 @@
 @section('title-page', 'Curso ') {{-- Añadir Nombre del Curso --}}
 
 @section('content')
+
+    @include('layout.partials.navbar')
     
     <h1 style="text-align: center">Bienvenido al Curso: {{$curso->name}}</h1>
     <a href="{{route('cursos.edit', $curso)}}">Editar Curso</a><br>
