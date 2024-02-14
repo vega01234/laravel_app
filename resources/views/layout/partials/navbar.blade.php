@@ -33,5 +33,6 @@
         <li class="nav_li"><a href="{{route('home')}}" class="nav_li_a">Home</a></li>
         <li class="nav_li"><a href="{{route('cursos.index')}}" class="nav_li_a">Cursos</a></li>
         <li class="nav_li"><a href="{{route('cursos.create')}}" class="nav_li_a">Crear Cursos</a></li>
+        <li class="nav_li"><a href="{{route('contactanos.index')}}" class="nav_li_a">Contactanos</a></li>
     </ul>
 </nav>
