@@ -19,7 +19,7 @@ class CursoFactory extends Factory
         return [
             'name' => $this->faker->unique()->randomElement(['El Infierno de Java', 'Python Basico', 'Introduccion a Laravel', 'PHP Intermedio', 'C++ La Venganza']),
             'description' => $this->faker->text(),
-            'category' => $this->faker->randomElement(['Front End', 'Back End'])
+            'category' => $this->faker->randomElement(['Front End', 'Back End']),
         ];
     }
 }
